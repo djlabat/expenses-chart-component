@@ -5,22 +5,187 @@
 }
 
 body {
+  width: 100%;
+  height: 100vh;
   font-size: 18px;
   font-family: "Outfit", sans-serif;
-  background: hsl(27deg, 66%, 92%);
+  background-image: url("..\\design\\desktop-design.jpg");
+  /* Za proveru koristiti u FFox Responsive Design mode (csM) */
 }
 
-#octocat {
-  display: block;
-  width: 384px;
-  margin: 50px auto;
+section {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
 }
 
-p {
-  display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+div.block {
+  background: rgba(16, 127, 112, 0.3);
+  width: 541px;
+  height: 662px;
+  margin: 0 auto;
+}
+
+header {
+  background: rgba(51, 255, 119, 0.2);
+  width: 541px;
+  height: 126px;
+  border-radius: 18px;
+  display: flex;
+  flex-flow: row;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+.head-left {
+  background: rgba(153, 85, 119, 0.2);
+  display: flex;
+  flex-flow: column;
+}
+
+.head-title {
+  background: rgba(85, 119, 153, 0.2);
+  margin-top: 28px;
+  padding-left: 33px;
+  color: hsl(27deg, 66%, 92%);
+}
+
+.head-value {
+  background: rgba(136, 34, 119, 0.2);
+  margin-top: 6px;
+  padding-left: 33px;
+  font-size: 34px;
+  font-weight: 700;
+  color: hsl(27deg, 66%, 92%);
+}
+
+.circle0, .circle100 {
+  position: relative;
+  top: -8px;
+  right: 63px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: hsl(27deg, 66%, 92%) 2px solid;
+}
+
+.circle100 {
+  top: 40px;
+  right: 40px;
+  border: none;
+  background-color: #000;
+}
+
+main {
+  background: rgba(153, 153, 51, 0.2);
+  height: auto;
+}
+
+.spending {
+  font-size: 34px;
+  padding-left: 41px;
+  padding: 28px 41px;
+  height: 100px;
+  font-weight: 700;
+  border: #000 solid 2px;
+}
+
+.angry-grid {
+  display: grid;
+  grid-template: 150px 61px/1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px;
+  margin: 10px auto;
+  width: 80%;
+  grid-column-gap: 10px;
+}
+
+#item-0 {
+  background-color: #5b3a2f;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  color: hsl(10deg, 79%, 65%);
+}
+
+#item-1 {
+  background-color: #008000;
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+
+#item-2 {
+  background-color: #D59B97;
+  grid-row: 1/2;
+  grid-column: 4/5;
+}
+
+#item-3 {
+  background-color: #8d7df6;
+  grid-row: 1/2;
+  grid-column: 5/6;
+  color: hsl(10deg, 79%, 65%);
+}
+
+#item-4 {
+  background-color: #7E5ABE;
+  grid-row: 1/2;
+  grid-column: 6/7;
+}
+
+#item-5 {
+  background-color: #6BB675;
+  grid-row: 1/2;
+  grid-column: 7/8;
+}
+
+#item-6 {
+  background-color: #e9bba8;
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+#item-7 {
+  background-color: #db758d;
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+#item-8 {
+  background-color: #d9a7ed;
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+
+#item-9 {
+  background-color: #956efc;
+  grid-row: 2/3;
+  grid-column: 4/5;
+}
+
+#item-10 {
+  background-color: #b5c9b8;
+  grid-row: 2/3;
+  grid-column: 5/6;
+}
+
+#item-11 {
+  background-color: #9a7d99;
+  grid-row: 2/3;
+  grid-column: 6/7;
+}
+
+#item-12 {
+  background-color: #d9c9c7;
+  grid-row: 2/3;
+  grid-column: 7/8;
+}
+
+#item-13 {
+  background-color: #7D6BE7;
+  grid-row: 1/2;
+  grid-column: 2/3;
 }
 
 /*# sourceMappingURL=styles.css.map */
