@@ -9,15 +9,14 @@
 				
    grid-template: 150px 61px / repeat(7, 50px);
    
-   grid-column-gap: 18px;
+   grid-column-gap: 18.3px;
    margin: 0 auto;
    width: 460px;
-
-
+   border-bottom: $very-pale-orange solid 2px;
 }
 
-@mixin bar-style {
-    background-color: hsl(10deg, 79%, 65%);
+.bar {
+    background-color: $soft-red;
     border-radius: 4px;
     position: relative;
     bottom: -149px;
@@ -25,96 +24,89 @@
     transform-origin: top;
     height: 10px;
 }
-
+.day {
+    text-align: center;
+    margin-top: 4px;
+    color: $medium-brown;
+}
 #item-0 {
-    @include bar-style();
-    height: 29px;
-    
-    grid-row: 1/2;
-    grid-column: 1/2;
+height: 29px;
+
+grid-row: 1/2;
+grid-column: 1/2;
 }
 #item-1 {
-    @include bar-style();
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-   
+
+grid-row: 1 / 2;
+grid-column: 2 / 3;
 }
 #item-2 {
-    @include bar-style();
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
-   
+
+grid-row: 1 / 2;
+grid-column: 3 / 4;
 }
 #item-3 {
-    @include bar-style();
-    grid-row: 1 / 2;
-    grid-column: 4 / 5;
-    color: $soft-red;
+
+grid-row: 1 / 2;
+grid-column: 4 / 5;
 }
 #item-4 {
-    @include bar-style();
-    grid-row: 1 / 2;
-    grid-column: 5 / 6;
-   
+
+grid-row: 1 / 2;
+grid-column: 5 / 6;
 }
 #item-5 {
-    @include bar-style();
-    grid-row: 1 / 2;
-    grid-column: 6 / 7;
-   
+
+grid-row: 1 / 2;
+grid-column: 6 / 7;
 }
 #item-6 {
-    @include bar-style();
-    grid-row: 1 / 2;
-    grid-column: 7 / 8;
-   
+
+grid-row: 1 / 2;
+grid-column: 7 / 8;
 }
+
+
+
 #item-7 {
 
-   background-color: #db758d; 
    grid-row: 2 / 3;
    grid-column: 1 / 2;
    
 }
 #item-8 {
 
-   background-color: #d9a7ed; 
    grid-row: 2 / 3;
    grid-column: 2 / 3;
    
 }
 #item-9 {
 
-   background-color: #956efc; 
    grid-row: 2 / 3;
    grid-column: 3 / 4;
    
 }
 #item-10 {
 
-   background-color: #b5c9b8; 
    grid-row: 2 / 3;
    grid-column: 4 / 5;
    
 }
 #item-11 {
 
-   background-color: #9a7d99; 
    grid-row: 2 / 3;
    grid-column: 5 / 6;
    
 }
 #item-12 {
 
-   background-color: #d9c9c7; 
    grid-row: 2 / 3;
    grid-column: 6 / 7;
    
 }
 #item-13 {
 
-   background-color: #7D6BE7; 
-   grid-row: 1 / 2;
+   grid-row: 2 / 3;
    grid-column: 7 / 8;
    
 }

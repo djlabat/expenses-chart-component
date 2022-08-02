@@ -21,14 +21,14 @@ body{
   }
 
   div.block {
-    background: rgba(16, 127, 112, 0.3);
+    // background: rgba(16, 127, 112, 0.3);
     width: 541px;
     height: 662px;
     margin: 0 auto;
   }
 
     header {
-      background: #3f73;
+      // background: #3f73;
       width: 541px;
       height: 126px;
       border-radius: 18px;
@@ -39,20 +39,20 @@ body{
     }
 
       .head-left {
-        background: #9573;
+        // background: #9573;
         display: flex;
         flex-flow: column;
       }
 
       .head-title {
-        background: #5793;
+        // background: #5793;
         margin-top: 28px;
         padding-left: 33px;
         color:$cream;
       }
 
       .head-value {
-        background: #8273;
+        // background: #8273;
         margin-top: 6px;
         padding-left: 33px;
         font-size: 34px;
@@ -78,7 +78,7 @@ body{
       }
   
 main {
-  background: #9933;
+  // background: #9933;
   height: auto;
 }
 
