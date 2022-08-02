@@ -17,106 +17,105 @@
 }
 
 @mixin bar-style {
-    background-color: $soft-red;
-    border-radius: 10px;
+    background-color: hsl(10deg, 79%, 65%);
+    border-radius: 4px;
+    position: relative;
+    bottom: -149px;
+    transform: rotate(180deg);
+    transform-origin: top;
+    height: 10px;
 }
 
 #item-0 {
     @include bar-style();
-    height: 50px;
-
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
+    height: 29px;
+    
+    grid-row: 1/2;
+    grid-column: 1/2;
 }
 #item-1 {
-
-   background-color: #008000; 
-   grid-row: 1 / 2;
-   grid-column: 3 / 4;
+    @include bar-style();
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
    
 }
 #item-2 {
-
-   background-color: #D59B97; 
-   grid-row: 1 / 2;
-   grid-column: 4 / 5;
+    @include bar-style();
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
    
 }
 #item-3 {
-
-   background-color: #8d7df6; 
-   grid-row: 1 / 2;
-   grid-column: 5 / 6;
-   color: $soft-red;
+    @include bar-style();
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+    color: $soft-red;
 }
 #item-4 {
-
-   background-color: #7E5ABE; 
-   grid-row: 1 / 2;
-   grid-column: 6 / 7;
+    @include bar-style();
+    grid-row: 1 / 2;
+    grid-column: 5 / 6;
    
 }
 #item-5 {
-
-   background-color: #6BB675; 
-   grid-row: 1 / 2;
-   grid-column: 7 / 8;
+    @include bar-style();
+    grid-row: 1 / 2;
+    grid-column: 6 / 7;
    
 }
 #item-6 {
-
-   background-color: #e9bba8; 
-   grid-row: 2 / 3;
-   grid-column: 1 / 2;
+    @include bar-style();
+    grid-row: 1 / 2;
+    grid-column: 7 / 8;
    
 }
 #item-7 {
 
    background-color: #db758d; 
    grid-row: 2 / 3;
-   grid-column: 2 / 3;
+   grid-column: 1 / 2;
    
 }
 #item-8 {
 
    background-color: #d9a7ed; 
    grid-row: 2 / 3;
-   grid-column: 3 / 4;
+   grid-column: 2 / 3;
    
 }
 #item-9 {
 
    background-color: #956efc; 
    grid-row: 2 / 3;
-   grid-column: 4 / 5;
+   grid-column: 3 / 4;
    
 }
 #item-10 {
 
    background-color: #b5c9b8; 
    grid-row: 2 / 3;
-   grid-column: 5 / 6;
+   grid-column: 4 / 5;
    
 }
 #item-11 {
 
    background-color: #9a7d99; 
    grid-row: 2 / 3;
-   grid-column: 6 / 7;
+   grid-column: 5 / 6;
    
 }
 #item-12 {
 
    background-color: #d9c9c7; 
    grid-row: 2 / 3;
-   grid-column: 7 / 8;
+   grid-column: 6 / 7;
    
 }
 #item-13 {
 
    background-color: #7D6BE7; 
    grid-row: 1 / 2;
-   grid-column: 2 / 3;
+   grid-column: 7 / 8;
    
 }
 
