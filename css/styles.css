@@ -88,25 +88,26 @@ main {
   font-size: 34px;
   padding-left: 41px;
   padding: 28px 41px;
+  margin-bottom: 40px;
   height: 100px;
   font-weight: 700;
   border: #000 solid 2px;
 }
 
-.angry-grid {
+.chart {
   display: grid;
-  grid-template: 150px 61px/1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 0px;
-  margin: 10px auto;
-  width: 80%;
-  grid-column-gap: 10px;
+  grid-template: 150px 61px/repeat(7, 50px);
+  grid-column-gap: 18px;
+  margin: 0 auto;
+  width: 460px;
 }
 
 #item-0 {
-  background-color: #5b3a2f;
+  background-color: hsl(10deg, 79%, 65%);
+  border-radius: 10px;
+  height: 50px;
   grid-row: 1/2;
   grid-column: 1/2;
-  color: hsl(10deg, 79%, 65%);
 }
 
 #item-1 {

@@ -1,22 +1,32 @@
-.angry-grid {
+.chart-cont {
+    // background-color: #5f6;
+
+}
+
+.chart {
+    // background: #19f;
    display: grid; 
 				
-   grid-template: 150px 61px / 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template: 150px 61px / repeat(7, 50px);
    
-   gap: 0px;
-   margin: 10px auto;
-   width: 80%;
-grid-column-gap: 10px;
+   grid-column-gap: 18px;
+   margin: 0 auto;
+   width: 460px;
 
 
 }
-  
-#item-0 {
 
-   background-color: #5b3a2f; 
-   grid-row: 1 / 2;
-   grid-column: 1 / 2;
-   color: $soft-red;
+@mixin bar-style {
+    background-color: $soft-red;
+    border-radius: 10px;
+}
+
+#item-0 {
+    @include bar-style();
+    height: 50px;
+
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
 }
 #item-1 {
 
