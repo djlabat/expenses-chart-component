@@ -22,8 +22,9 @@
     bottom: -149px;
     transform: rotate(180deg);
     transform-origin: top;
-    height: 10px;
+    height: 40px;
 }
+.bar:hover {background-color: $cyan;}
 .day {
     text-align: center;
     margin-top: 4px;

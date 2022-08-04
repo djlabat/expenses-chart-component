@@ -51,7 +51,7 @@ header {
 
 .head-value {
   margin-top: 6px;
-  padding-left: 33px;
+  padding-left: 30px;
   font-size: 34px;
   font-weight: 700;
   color: hsl(27deg, 66%, 92%);
@@ -85,7 +85,7 @@ main {
   margin-bottom: 40px;
   height: 100px;
   font-weight: 700;
-  border: #000 solid 2px;
+  visibility: visible;
 }
 
 .chart {
@@ -104,7 +104,11 @@ main {
   bottom: -149px;
   transform: rotate(180deg);
   transform-origin: top;
-  height: 10px;
+  height: 40px;
+}
+
+.bar:hover {
+  background-color: hsl(186deg, 34%, 60%);
 }
 
 .day {
