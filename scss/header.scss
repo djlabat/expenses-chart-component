@@ -1,0 +1,46 @@
+header {
+    background: $soft-red;
+    width: 541px;
+    height: 126px;
+    border-radius: 18px;
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 25px;
+    justify-content: space-between;
+  }
+
+    .head-left {
+      display: flex;
+      flex-flow: column;
+    }
+
+    .head-title {
+      margin-top: 28px;
+      padding-left: 33px;
+      color:$cream;
+    }
+
+    .head-value {
+      margin-top: 6px;
+      padding-left: 30px;
+      font-size: 34px;
+      font-weight: 700;
+      color: $cream
+    }
+
+    .circle0, .circle100 {
+      position: relative;
+      top: -8px;
+      right: 63px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: $cream 2px solid;
+    }
+
+    .circle100 {
+      top: 40px;
+      right: 40px;
+      border: none;
+      background-color: #000;
+    }

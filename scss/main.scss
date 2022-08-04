@@ -1,0 +1,45 @@
+.chart {
+   display: grid;
+
+   grid-template: 150px 61px / repeat(7, 50px);
+
+   grid-column-gap: 18.3px;
+   margin: 0 auto;
+   width: 460px;
+   border-bottom: $cream solid 2px;
+}
+
+.bar {
+   background-color: $soft-red;
+   border-radius: 4px;
+   position: relative;
+   bottom: -149px;
+   transform: rotate(180deg);
+   transform-origin: top;
+   height: 40px;
+}
+
+.bar:hover {
+   background-color: $cyan;
+}
+
+.day {
+   text-align: center;
+   margin-top: 4px;
+   color: $medium-brown;
+}
+
+// Creation of upper 7 grid-elem
+@for $i from 0 to 7 {
+   #item-#{$i}{
+      grid-row: 1 / 2;
+      grid-column: #{$i+1} / #{$i+2};
+   }
+}
+// Creation od lower 7 grid-elem
+@for $i from 7 to 14 {
+   #item-#{$i}{
+      grid-row: 2 / 3;
+      grid-column: #{$i -6} / #{$i -5};
+   }
+}
