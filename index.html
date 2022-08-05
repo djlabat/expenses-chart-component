@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Expenses chart component</title>
-
+  <!-- my style -->
   <link rel="stylesheet" href="css/styles.css">
-
+  <!-- font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet"> 
+  <!-- JS -->
+  <script defer src="app.js" type="module"></script>
+  <!-- JSON -->
+  <script src="data.json" type="application/json" ></script>
+  
+  <title>Frontend Mentor | Expenses chart component</title>
 </head>
 <body>
 
@@ -32,12 +36,13 @@
           </div>
 
         </header>
+
         <main>
           <p class="spending">Spending - Last 7 days</p>
 
           <div class="chart-cont">
             <div class="chart">
-              <div class="bar" id="item-0">&nbsp;</div>
+              <div class="bar" id="item-0"></div>
               <div class="bar" id="item-1">&nbsp;</div>
               <div class="bar" id="item-2">&nbsp;</div>
               <div class="bar" id="item-3">&nbsp;</div>
@@ -53,7 +58,20 @@
               <div class="day" id="item-13">sun</div>
             </div>
           </div>
+
+          
         </main>
+
+        <footer>
+          <div class="footer-left">
+            <div class="total-text">Total this month</div>
+            <div class="total-number">$478.33</div>
+          </div>
+          <div class="footer-right">
+            <div class="fr-num">+2.4%</div>
+            <div class="fr-text">from last month</div>
+          </div>
+        </footer>
       </div>
 
   </section>

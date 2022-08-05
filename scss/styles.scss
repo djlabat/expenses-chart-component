@@ -1,13 +1,23 @@
-@import "colors";
 @import "reset";
+@import "vars-colors";
+@import "header";
+@import "main";
+@import "footer";
+
+@import "media-query";
+  @include mobile {
+    
+  }
+
+
 
 body{
-  // background: #335;
   width: 100%;
   height: 100vh;
   font-size: 18px;
   font-family: 'Outfit', sans-serif;
-  background-image: url("..\\design\\desktop-design.jpg");
+  background-color: $cream;
+  // background-image: url("..\\design\\desktop-design.jpg");
   /* Za proveru koristiti u FFox Responsive Design mode (csM) */
 }
 
@@ -21,65 +31,17 @@ body{
   }
 
   div.block {
-    // background: rgba(16, 127, 112, 0.3);
     width: 541px;
     height: 662px;
     margin: 0 auto;
   }
 
-    header {
-      // background: #3f73;
-      width: 541px;
-      height: 126px;
-      border-radius: 18px;
-      display: flex;
-      flex-flow: row;
-      margin-bottom: 25px;
-      justify-content: space-between;
-    }
-
-      .head-left {
-        // background: #9573;
-        display: flex;
-        flex-flow: column;
-      }
-
-      .head-title {
-        // background: #5793;
-        margin-top: 28px;
-        padding-left: 33px;
-        color:$cream;
-      }
-
-      .head-value {
-        // background: #8273;
-        margin-top: 6px;
-        padding-left: 30px;
-        font-size: 34px;
-        font-weight: 700;
-        color: $cream
-      }
-
-      .circle0, .circle100 {
-        position: relative;
-        top: -8px;
-        right: 63px;
-        width: 48px;
-        height: 48px;
-        border-radius: 50%;
-        border: $cream 2px solid;
-      }
-
-      .circle100 {
-        top: 40px;
-        right: 40px;
-        border: none;
-        background-color: #000;
-      }
+    
   
 main {
-  // background: #9933;
+  background: $very-pale-orange;
   height: auto;
+  border-radius: 20px 20px 0 0;
 }
 
   .spending {
@@ -89,7 +51,9 @@ main {
     margin-bottom: 40px;
     height: 100px;
     font-weight: 700;
-    visibility: visible
+    visibility: visible;
+    color: $dark-brown;
   }
 
-  @import "chart"; 
+
+
