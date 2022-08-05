@@ -35,12 +35,12 @@ header {
       width: 48px;
       height: 48px;
       border-radius: 50%;
-      border: $cream 2px solid;
+      border: $cream 3px solid;
     }
 
     .circle100 {
       top: 40px;
       right: 40px;
       border: none;
-      background-color: #000;
+      background-color: $dark-brown;
     }

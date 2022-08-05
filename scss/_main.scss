@@ -13,14 +13,18 @@
    background-color: $soft-red;
    border-radius: 4px;
    position: relative;
-   bottom: -149px;
-   transform: rotate(180deg);
-   transform-origin: top;
-   height: 40px;
+   color: $soft-red;
+   font-size: 0.8em;
+   text-align: center;
+   &.today {
+      color: $cyan;
+   }
 }
 
+
+
 .bar:hover {
-   background-color: $cyan;
+   color: $dark-brown;
 }
 
 .day {
