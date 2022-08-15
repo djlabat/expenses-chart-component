@@ -1,3 +1,4 @@
+@use "vars";
 .chart {
    display: grid;
 
@@ -6,31 +7,32 @@
    grid-column-gap: 18.3px;
    margin: 0 auto;
    width: 460px;
-   border-bottom: $cream solid 2px;
+   border-bottom: vars.$cream solid 2px;
 }
 
 .bar {
-   background-color: $soft-red;
+   background-color: vars.$soft-red;
    border-radius: 4px;
    position: relative;
-   color: $soft-red;
+   color: vars.$soft-red;
    font-size: 0.8em;
    text-align: center;
    &.today {
-      color: $cyan;
+      color: vars.$cyan;
+      background-color: vars.$cyan;
    }
 }
 
 
 
 .bar:hover {
-   color: $dark-brown;
+   color: vars.$dark-brown;
 }
 
 .day {
    text-align: center;
    margin-top: 4px;
-   color: $medium-brown;
+   color: vars.$medium-brown;
 }
 
 // Creation of upper 7 grid-elem

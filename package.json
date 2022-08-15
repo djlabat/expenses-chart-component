@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "moment": "^2.29.4"
+    "bourbon": "^7.2.0",
+    "include-media": "^1.4.10"
   }
 }
