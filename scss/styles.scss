@@ -1,23 +1,18 @@
-@use "list";
-// @import "../node_modules/bourbon/index.js";
+@use "list" as *;
 
-
-// @import "../node_modules/include-media/src/media";
-// @import "media-query";
-// @include media(">phone", "<=tablet") {
-//   background-color: red;
-// }
-
-
+// @use "media-query" as *;
 
 body{
+  /* ↓ Za proveru koristiti u FFox Responsive Design mode (csM) */
+  background: url("../design/desktop-design.jpg") center;
+  filter: invert(100%);
+  opacity:0.5;
+
   width: 100%;
   height: 100vh;
   font-size: 18px;
   font-family: 'Outfit', sans-serif;
-  background-color: list.$cream;
-  // background-image: url("..\\design\\desktop-design.jpg");
-  /* Za proveru koristiti u FFox Responsive Design mode (csM) */
+  background-color: $cream;
 }
 
   section {
@@ -25,7 +20,7 @@ body{
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    // width: 100%;
+    width: 100%;
     height: 100vh;
   }
 
@@ -38,7 +33,8 @@ body{
     
   
 main {
-  background: list.$very-pale-orange;
+  opacity:0.7;
+  background: $very-pale-orange;
   height: auto;
   border-radius: 20px 20px 0 0;
 }
@@ -51,8 +47,95 @@ main {
     height: 100px;
     font-weight: 700;
     visibility: visible;
-    color: list.$dark-brown;
+    color: $dark-brown;
   }
 
 
 
+// za mobilne
+@media (max-width: 376px) {
+  body {
+  /* ↓ Za proveru koristiti u FFox Responsive Design mode (csM) */
+  background: url("../design/mobile-design.jpg") center;
+  }
+  div.block {
+    // background-color: #3f48;
+    height: 533px;
+    width: 343px;
+  }
+  header {
+    width: 100%;
+    height: 97px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+
+  .head-title {
+    margin-top: 19px;
+    padding-left: 19px;
+    font-size: 16px;
+  }
+
+  .head-value {
+    margin-top: 4px;
+    padding-left: 19px;
+    font-size: 25px;
+  }
+
+  .circle0, .circle100 {
+    top: -12px;
+    right: 45px;
+    width: 40px;
+    height: 40px;
+  }
+
+    .circle100 {
+      top: 28px;
+      right: 24px;
+      border: none;
+    }
+
+  main {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .spending {
+    font-size: 26px;
+    padding: 23px 18px;
+    margin-bottom: 8px;
+  }
+
+  .chart {
+    width: 303px;
+    grid-template: 150px 50px / repeat(7, 33px);
+    grid-column-gap: 12px;
+  }
+
+  .bar {
+    font-size: 0.5em;
+ }
+  
+ .day {
+    margin-top: 10px;
+    font-size: 0.7em;
+  }
+  
+  .footer-left {
+    padding: 24px 17px;
+    font-size: 0.9em;
+  }
+  
+  .total-number {
+    font-size: 2em;
+    padding-top: 4px;
+  }
+  
+  .footer-right {
+    padding: 0 22px;
+    width: 50%;
+    text-align: end;
+    margin-top: 47px;
+    font-size: 16px;
+  }
+  // ///////////////////////////////////
+}
