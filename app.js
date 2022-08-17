@@ -1,18 +1,28 @@
-// JSON data - Source
+// JSON data for chart
 import data from './data.json' assert {type: 'json'}; // This line works only in Chrome
 
-// HTML Colection of days - Target
-let chart = document.querySelector(".chart").children
+// Vars
+let bars = [...document.getElementsByClassName("bar")] // HTML Colection - bars
+let popups = [...document.getElementsByClassName("popup")] // HTML Colection - Popups
 
-// Source→ Target
+let dataVals = data.map( e=> e.amount) // [ 17 35 52 31 23 43 25 ]
+let dataMax = Math.max(...dataVals); // 52
+
+// JSON data → .bar height
 for (let i=0; i<7; i++) {
-    chart[i].style.marginTop = 149 - data[i].amount + "px"
-    chart[i].innerText = data[i].amount
+    bars[i].style.marginTop = 149 - (dataVals[i] * 150 / dataMax) + "px"
+    popups[i].innerText = "$" + dataVals[i]
 }
 
+// Cyan color today's bar
 let today = new Date()
+bars[(today.getDay()+6)%7].classList.add("today")
 
-//   [  today's bar↓       ]
-chart[(today.getDate()-1)%6].style.backgroundColor = "hsl(186, 34%, 60%)"
-chart[(today.getDate()-1)%6].classList.add("today")
+// Mouse over bar - popup
+function hover(element, className){
+    element.addEventListener('mouseenter', e => element.classList.add(className))
+    element.addEventListener('mouseleave', e => element.classList.remove(className))
+}
+
+bars.forEach(e => e.addEventListener("mouseover", hover(e, "hover")));
 

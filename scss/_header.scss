@@ -1,5 +1,6 @@
+@use "vars";
 header {
-    background: $soft-red;
+    background: vars.$soft-red;
     width: 541px;
     height: 126px;
     border-radius: 18px;
@@ -17,7 +18,7 @@ header {
     .head-title {
       margin-top: 28px;
       padding-left: 33px;
-      color:$cream;
+      color: vars.$cream;
     }
 
     .head-value {
@@ -25,7 +26,7 @@ header {
       padding-left: 30px;
       font-size: 34px;
       font-weight: 700;
-      color: $cream
+      color: vars.$cream
     }
 
     .circle0, .circle100 {
@@ -35,12 +36,12 @@ header {
       width: 48px;
       height: 48px;
       border-radius: 50%;
-      border: $cream 3px solid;
+      border: vars.$cream 3px solid;
     }
 
     .circle100 {
       top: 40px;
       right: 40px;
       border: none;
-      background-color: $dark-brown;
+      background-color: vars.$dark-brown;
     }

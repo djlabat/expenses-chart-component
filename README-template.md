@@ -16,26 +16,22 @@ Users should be able to:
 
 ### Screenshot
 
-![Screen shot](./Screenshot.png)
+![Desktop Screenshot](./screenshot_desktop.jpeg)
+![Mobile Screenshot](./screenshot_mobile.jpeg)
 
 ### Links
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+- HTML5
 - SCSS
+- JS
 
 ### What I learned
 
 - Connectiong JSON to JS 
-  - import... assert {type:"json"} + open in Chrome, not FFox
 - Improve expirience of correct drawing
-- Improve handling with CSS GRID
-
-To see how you can add code snippets, see below:
+- Popups
 
 ### Continued development
 

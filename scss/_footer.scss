@@ -1,8 +1,10 @@
+@use "vars";
+
 footer {
     display: flex;
-    background-color:$very-pale-orange;
+    background-color: vars.$very-pale-orange;
     border-radius: 0 0 20px 20px;
-    height: 158px;
+    height: 156px;
 }
 
 .footer-left {
@@ -11,14 +13,14 @@ footer {
     width: 50%;
 }
     .total-text {
-        color: $medium-brown;
+        color: vars.$medium-brown;
     }
 
     .total-number {
         font-size: 2.6em;
         font-weight: 400;
         width: 50%;
-        color: $dark-brown;
+        color: vars.$dark-brown;
     }
 
 .footer-right {
@@ -30,8 +32,8 @@ footer {
 
     .fr-num {
         font-weight: 700;
-        color: $dark-brown;
+        color: vars.$dark-brown;
     }
     .fr-text {
-        color: $medium-brown
+        color: vars.$medium-brown
     }
