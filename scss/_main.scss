@@ -1,4 +1,6 @@
 @use "vars";
+@use "sass:color";
+
 .chart {
    display: grid;
 
@@ -14,21 +16,35 @@
    background-color: vars.$soft-red;
    border-radius: 4px;
    position: relative;
-   color: vars.$soft-red;
-   font-size: 0.8em;
-   text-align: center;
    &.today {
-      color: vars.$cyan;
       background-color: vars.$cyan;
+      &.hover {
+         background-color: lighten(vars.$cyan, 10);
+      }
    }
 }
 
-
-
-.bar:hover {
-   color: vars.$dark-brown;
+.popup {
+   display: none;
+   position: relative;
+   top: -40px;
+   left: -9px;
+   border-radius: 5px;
+   font-size: 16px;
 }
 
+   .hover>.popup {
+      display: initial;
+      background-color: black;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+   }
+   .hover {
+      background-color: lighten(vars.$soft-red, 10);
+      cursor: pointer;
+   }
+   
 .day {
    text-align: center;
    margin-top: 4px;

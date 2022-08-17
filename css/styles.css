@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px;
@@ -65,17 +64,34 @@ header {
   background-color: hsl(10deg, 79%, 65%);
   border-radius: 4px;
   position: relative;
-  color: hsl(10deg, 79%, 65%);
-  font-size: 0.8em;
-  text-align: center;
 }
 .bar.today {
-  color: hsl(186deg, 34%, 60%);
   background-color: hsl(186deg, 34%, 60%);
 }
+.bar.today.hover {
+  background-color: #98c7cd;
+}
 
-.bar:hover {
-  color: hsl(25deg, 47%, 15%);
+.popup {
+  display: none;
+  position: relative;
+  top: -40px;
+  left: -9px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.hover > .popup {
+  display: initial;
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.hover {
+  background-color: #f29e8d;
+  cursor: pointer;
 }
 
 .day {
@@ -158,7 +174,7 @@ footer {
   display: flex;
   background-color: hsl(33deg, 100%, 98%);
   border-radius: 0 0 20px 20px;
-  height: 158px;
+  height: 156px;
 }
 
 .footer-left {
@@ -195,10 +211,6 @@ footer {
 }
 
 body {
-  /* ↓ Za proveru koristiti u FFox Responsive Design mode (csM) */
-  background: url("../design/desktop-design.jpg") center;
-  filter: invert(100%);
-  opacity: 0.5;
   width: 100%;
   height: 100vh;
   font-size: 18px;
@@ -222,7 +234,6 @@ div.block {
 }
 
 main {
-  opacity: 0.7;
   background: hsl(33deg, 100%, 98%);
   height: auto;
   border-radius: 20px 20px 0 0;
@@ -240,10 +251,6 @@ main {
 }
 
 @media (max-width: 376px) {
-  body {
-    /* ↓ Za proveru koristiti u FFox Responsive Design mode (csM) */
-    background: url("../design/mobile-design.jpg") center;
-  }
   div.block {
     height: 533px;
     width: 343px;
@@ -294,6 +301,21 @@ main {
   .day {
     margin-top: 10px;
     font-size: 0.7em;
+  }
+  .popup {
+    display: none;
+    position: relative;
+    top: -40px;
+    left: -8px;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  .hover > .popup {
+    padding: 6px;
+    text-align: center;
+  }
+  footer {
+    height: 114px;
   }
   .footer-left {
     padding: 24px 17px;
