@@ -132,3 +132,12 @@ main {
     font-size: 16px;
   }
 }
+
+// for tablet
+@media (min-width: 376px) and (max-width: 768px) {
+  section {
+    display: block;
+    margin: 20px 0;
+    height: 672px;
+  }
+}

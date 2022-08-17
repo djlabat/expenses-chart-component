@@ -8,8 +8,6 @@ let popups = [...document.getElementsByClassName("popup")] // HTML Colection - P
 let dataVals = data.map( e=> e.amount) // [ 17 35 52 31 23 43 25 ]
 let dataMax = Math.max(...dataVals); // 52
 
-document.querySelector(".log").innerText= `max value: ${dataMax}`
-
 // JSON data → .bar height
 for (let i=0; i<7; i++) {
     bars[i].style.marginTop = 149 - (dataVals[i] * 150 / dataMax) + "px"
