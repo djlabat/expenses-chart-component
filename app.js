@@ -1,17 +1,22 @@
 // JSON data for chart
 import data from './data.json' assert {type: 'json'}; // This line works only in Chrome
 
-// HTML Colection of days in chart - Target
-let bars = [...document.getElementsByClassName("bar")]
-let popups = [...document.getElementsByClassName("popup")]
+// Vars
+let bars = [...document.getElementsByClassName("bar")] // HTML Colection - bars
+let popups = [...document.getElementsByClassName("popup")] // HTML Colection - Popups
+
+let dataVals = data.map( e=> e.amount) // [ 17 35 52 31 23 43 25 ]
+let dataMax = Math.max(...dataVals); // 52
+
+document.querySelector(".log").innerText= `max value: ${dataMax}`
 
 // JSON data → .bar height
 for (let i=0; i<7; i++) {
-    bars[i].style.marginTop = 149 - data[i].amount + "px"
-    popups[i].innerText = "$" + data[i].amount
+    bars[i].style.marginTop = 149 - (dataVals[i] * 150 / dataMax) + "px"
+    popups[i].innerText = "$" + dataVals[i]
 }
 
-// Cyan color dotay's bar
+// Cyan color today's bar
 let today = new Date()
 bars[(today.getDay()+6)%7].classList.add("today")
 
