@@ -1,19 +1,12 @@
 @use "list" as *;
 
 body{
-  // ↓ Testing
-  // background: url("../design/desktop-design.jpg") center;
-  // filter: invert(100%);
-  // opacity:0.5;
-  // ↑ Testing
-
   width: 100%;
   height: 100vh;
   font-size: 18px;
   font-family: 'Outfit', sans-serif;
   background-color: $cream;
 }
-
   section {
     display: flex;
     flex-flow: column;
@@ -22,21 +15,17 @@ body{
     width: 100%;
     height: 100vh;
   }
-
   div.block {
     width: 541px;
     height: 662px;
     margin: 0 auto;
-  }
-
-    
+  }   
   
 main {
   background: $very-pale-orange;
   height: auto;
   border-radius: 20px 20px 0 0;
 }
-
   .spending {
     font-size: 34px;
     padding-left: 41px;
@@ -52,13 +41,6 @@ main {
 
 // for Mobile
 @media (max-width: 376px) {
-  // ↓ Testing
-  // body {
-  //   background: url("../design/mobile-design.jpg") center;
-  //   filter: invert(100%);
-  //   opacity:0.5;
-  // }
-  // ↑ Testing
   div.block {
     height: 533px;
     width: 343px;
@@ -89,15 +71,13 @@ main {
     height: 40px;
   }
 
-    .circle100 {
-      top: 28px;
-      right: 24px;
-      border: none;
-    }
-
-  main {
-    border-radius: 10px 10px 0 0;
+  .circle100 {
+    top: 28px;
+    right: 24px;
+    border: none;
   }
+
+  main {border-radius: 10px 10px 0 0;}
 
   .spending {
     font-size: 26px;
@@ -111,11 +91,9 @@ main {
     grid-column-gap: 12px;
   }
 
-  .bar {
-    font-size: 0.5em;
- }
+  .bar {font-size: 0.5em;}
   
- .day {
+  .day {
     margin-top: 10px;
     font-size: 0.7em;
   }
@@ -128,13 +106,13 @@ main {
     border-radius: 5px;
     font-size: 13px;
  }
+
   .hover>.popup {
     padding: 6px;
     text-align: center;
   }
-footer {
-  height: 114px;
-}
+
+  footer {height: 114px;}
   
   .footer-left {
     padding: 24px 17px;

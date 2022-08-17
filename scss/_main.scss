@@ -24,6 +24,7 @@
    }
 }
 
+// Initial popup - invisible - no hover
 .popup {
    display: none;
    position: relative;
@@ -32,7 +33,7 @@
    border-radius: 5px;
    font-size: 16px;
 }
-
+   // popup hover - visible
    .hover>.popup {
       display: initial;
       background-color: black;
@@ -40,6 +41,7 @@
       padding: 10px;
       text-align: center;
    }
+   // change color of bar on hover
    .hover {
       background-color: lighten(vars.$soft-red, 10);
       cursor: pointer;
